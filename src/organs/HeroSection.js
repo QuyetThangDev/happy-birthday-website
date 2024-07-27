@@ -1,0 +1,17 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Image } from "../atoms/Image";
+import bgImage from "../../assets/HeroVector.png";
+// import heroImage from "../../assets/hero-img.png";
+import { Text } from "../atoms/Text";
+import { HeroTexts } from "../particles/DataLists";
+// import { Button } from "../atoms/Button";
+import { Play, ArrowFatDown } from "@phosphor-icons/react";
+import { Fade, Slide } from "react-awesome-reveal";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import gif from "../../assets/hi.gif";
+const HeroSection = () => {
+    return (_jsxs("section", { className: "w-full lg:h-screen md:h-[550px] h-[830px] relative overflow-x-hidden flex justify-end", children: [_jsx(Image, { className: "h-[60%] w-[80%] lg:h-[90vh] md:h-[50vh] lg:w-1/2 md:w-[55%]", image: bgImage, alt: "Hero Background Vector" }), _jsxs("main", { className: "w-full lg:h-full h-auto grid md:grid-cols-2 absolute top-0 left-0 lg:px-24 md:px-8 px-5 pt-24 md:pt-32 lg:pt-0", children: [_jsxs("div", { className: "flex flex-col justify-center md:gap-6 gap-3 md:order-1 order-2", children: [_jsx(Text, { as: "p", className: "text-color1 uppercase tracking-widest lg:text-base  text-sm font-normal", children: _jsx(Fade, { children: HeroTexts.firstText }) }), _jsx(Text, { as: "h1", className: " text-gray-700 lg:text-4xl md:text-5xl text-3xl font-medium font-sans", children: _jsx(Fade, { children: HeroTexts.secondText }) }), _jsx(Text, { as: "p", className: "text-color3 md:text-xl text-sm text-justify font-light font-sans", children: _jsx(Fade, { children: HeroTexts.thirdText }) }), _jsx("div", { className: "w-full flex md:justify-start justify-between items-center lg:gap-12 md:gap-6 gap-0", children: _jsxs("div", { className: "flex items-center lg:gap-6 gap-3 cursor-pointer", children: [_jsx(NavLink, { to: "/product", children: _jsx(motion.button, { whileHover: { scale: 1.1 }, whileTap: { scale: 0.9 }, children: _jsxs(Text, { as: "span", className: "relative flex h-14 w-14", children: [_jsx(Text, { as: "span", className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-color1 opacity-75" }), _jsx(Text, { as: "span", className: "relative flex justify-center items-center text-white rounded-full h-14 w-14 bg-color1", children: _jsx(Play, { size: 20, color: "currentColor", weight: "fill" }) })] }) }) }), _jsx(AnchorLink, { href: "#services", children: _jsx(motion.button, { whileHover: { scale: 1.1 }, whileTap: { scale: 0.9 }, children: _jsxs(Text, { as: "span", className: "relative flex h-14 w-14", children: [_jsx(Text, { as: "span", className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-color1 opacity-75" }), _jsx(Text, { as: "span", className: "relative flex justify-center items-center text-white rounded-full h-14 w-14 bg-color1", children: _jsx(ArrowFatDown, { size: 20, color: "currentColor", weight: "fill" }) })] }) }) }), _jsx("span", { className: "text-orange-700 ", children: HeroTexts.secondButton })] }) })] }), _jsx("div", { className: "flex flex-col items-end justify-center md:order-2 order-1", children: _jsx(Slide, { direction: "right", children: _jsx(Image, { image: gif, alt: "Hero Image", className: "lg:h-[85%] lg:w-[90%] md:h-[100%] md:w-full w-[90%] h-[20vh]" }) }) })] })] }));
+};
+export default HeroSection;
