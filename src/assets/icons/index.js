@@ -1,5 +1,6 @@
 import css from './css.svg'
 import express from './express.svg'
+import facebook from './facebook.svg'
 import git from './git.svg'
 import github from './github.svg'
 import html from './html.svg'
@@ -30,6 +31,7 @@ import soundoff from './soundoff.png'
 export {
     css,
     express,
+    facebook,
     git,
     github,
     html,

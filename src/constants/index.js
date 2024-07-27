@@ -5,6 +5,7 @@ import {
     css,
     estate,
     express,
+    facebook,
     git,
     github,
     html,
@@ -165,21 +166,21 @@ export const experiences = [
 ];
 
 export const socialLinks = [
+    // {
+    //     name: 'Contact',
+    //     iconUrl: contact,
+    //     link: '/contact',
+    // },
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
+        name: 'Facebook',
+        iconUrl: facebook,
+        link: 'https://www.facebook.com/thangquyet0501/',
     },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-    }
+    // {
+    //     name: 'LinkedIn',
+    //     iconUrl: linkedin,
+    //     link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+    // }
 ];
 
 export const projects = [

@@ -1,4 +1,4 @@
-import { HeroSection, Services, TopDestination, BookingSteps, Testimonials, Partners, NewsLetter } from '../containers';
+import { HeroSection, Services, TopDestination, BookingSteps, Testimonials, Partners, NewsLetter, Footer } from '../containers';
 
 const HomePage = () => {
     return (
@@ -12,9 +12,9 @@ const HomePage = () => {
             <div id="top-destination">
                 <TopDestination />
             </div>
-            <div id="booking-steps">
+            {/* <div id="booking-steps">
                 <BookingSteps />
-            </div>
+            </div> */}
             {/* <div id="testimonials">
                 <Testimonials />
             </div> */}
@@ -24,6 +24,9 @@ const HomePage = () => {
             {/* <div id="newsletter">
                 <NewsLetter />
             </div> */}
+            <div id="footer">
+                <Footer/>
+            </div>
         </>
     );
 }

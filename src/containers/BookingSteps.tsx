@@ -17,6 +17,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 import { ArrowFatDown } from "@phosphor-icons/react";
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { Play } from "lucide-react";
 
 const BookingSteps = () => {
   const renderIcons = useCallback((element: number) => {
@@ -68,9 +70,29 @@ const BookingSteps = () => {
                 >
                   {renderIcons(index)}
                 </Text>
+                <NavLink to="/gift">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Text as="span" className="relative flex h-14 w-14">
+                    <Text
+                      as="span"
+                      className="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-color1"
+                    ></Text>
+                    <Text
+                      as="span"
+                      className="relative flex items-center justify-center text-white rounded-full h-14 w-14 bg-color1"
+                    >
+                      <Play size={20} color="currentColor" weight="fill" />
+                    </Text>
+                  </Text>
+                </motion.button>
+              </NavLink>
                 <Text as="p" className="text-sm font-light text-color3">
                   {step.text}
                 </Text>
+
               </List>
             ))}
           </ul>
@@ -146,7 +168,7 @@ const BookingSteps = () => {
           </Card> */}
         </div>
       </main>
-      <AnchorLink href="#testimonials">
+      {/* <AnchorLink href="#testimonials">
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Text as="span" className="relative flex h-14 w-14">
             <Text
@@ -161,7 +183,7 @@ const BookingSteps = () => {
             </Text>
           </Text>
         </motion.button>
-      </AnchorLink>
+      </AnchorLink> */}
     </section>
   );
 };

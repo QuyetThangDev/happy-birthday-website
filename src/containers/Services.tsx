@@ -7,7 +7,7 @@ import { useCallback } from "react";
 import { Fade } from "react-awesome-reveal";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
-import { ArrowFatDown } from "@phosphor-icons/react";
+import { ArrowFatDown, Gift, Play } from "@phosphor-icons/react";
 import giftbox from "../assets/icons/giftbox.png";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,6 +21,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label"
+import { NavLink } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -63,12 +64,16 @@ const Services = () => {
                     <Label htmlFor="name" className="w-full font-sans font-normal leading-5 text-justify text-gray-600">
                       {card.thirdText}
                     </Label>
-                  </div>
-                  {/* <div className="flex items-center gap-4">
-                    <Label htmlFor="username" className="text-left">
-                      {card.secondText}
+                    <Label htmlFor="name" className="w-full font-sans font-normal leading-5 text-justify text-gray-600">
+                      {card.fourthText}
                     </Label>
-                  </div> */}
+                    <Label htmlFor="name" className="w-full font-sans font-normal leading-5 text-justify text-gray-600">
+                      {card.fifthText}
+                    </Label>
+                    <Label htmlFor="name" className="w-full font-sans font-normal leading-5 text-justify text-gray-600">
+                      {card.sixthText}
+                    </Label>
+                  </div>
                 </div>
                 <DialogFooter className="sm:justify-end">
                   <DialogClose asChild>
@@ -81,9 +86,29 @@ const Services = () => {
             </Dialog>
           ))}
         </div>
-        <div className="flex items-center justify-center w-full gap-0 md:justify-center lg:gap-12 md:gap-6">
-          <div className="flex items-center justify-center gap-3 text-center cursor-pointer lg:gap-6">
-            <AnchorLink href="#top-destination">
+        <div className="flex items-center justify-center w-full gap-0 md:justify-center lg:gap-12 md:gap-6 mb-4">
+          <div className="flex flex-row w-full items-center justify-center gap-3 text-center cursor-pointer lg:gap-6">
+          <NavLink to="/gift">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Text as="span" className="relative flex h-14 w-14">
+                    <Text
+                      as="span"
+                      className="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-color1"
+                    ></Text>
+                    <Text
+                      as="span"
+                      className="relative flex items-center justify-center text-white rounded-full h-14 w-14 bg-color1"
+                    >
+                      <Gift size={20} color="currentColor" weight="fill"/>
+                    </Text>
+                  </Text>
+                </motion.button>
+              </NavLink>
+                      <p>Your gift</p>
+            {/* <AnchorLink href="#top-destination">
               <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Text as="span" className="relative flex h-14 w-14">
                   <Text
@@ -98,7 +123,7 @@ const Services = () => {
                   </Text>
                 </Text>
               </motion.button>
-            </AnchorLink>
+            </AnchorLink> */}
           </div>
         </div>
       </main>

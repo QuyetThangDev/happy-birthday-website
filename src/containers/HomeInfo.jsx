@@ -6,11 +6,11 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
       <h1 className='px-8 py-4 mx-5 text-center text-white sm:text-xl sm:leading-snug neo-brutalism-blue'>
-        Hi, I'm
-        <span className='mx-2 font-semibold text-white'>Adrian</span>
+        Chào mừng cậu đến mới Đảo Hy Vọng
+        {/* <span className='mx-2 font-semibold text-white'>Adrian</span> */}
         👋
         <br />
-        A Software Engineer from Croatia 🇭🇷
+        {/* A Software Engineer from Croatia 🇭🇷 */}
       </h1>
     );
 
@@ -18,13 +18,13 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Worked with many companies <br /> and picked up many skills along the way
+          Truyền thuyết kể rằng, những ai nhìn thấy hòn đảo này sẽ luôn gặp may mắn, không bao giờ từ bỏ hy vọng trong tim!
         </p>
 
-        <Link to='/about' className='neo-brutalism-white neo-btn'>
+        {/* <Link to='/about' className='neo-brutalism-white neo-btn'>
           Learn more
           <img src={arrow} alt='arrow' className='object-contain w-4 h-4' />
-        </Link>
+        </Link> */}
       </div>
     );
   }
@@ -33,13 +33,12 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Led multiple projects to success over the years. <br /> Curious about the impact?
+          Hãy mơ thật lớn, hãy bay thật xa và đừng quên mang theo bên mình hành trang là sự tự tin nhé!
         </p>
-
-        <Link to='/projects' className='neo-brutalism-white neo-btn'>
+        {/* <Link to='/projects' className='neo-brutalism-white neo-btn'>
           Visit my portfolio
           <img src={arrow} alt='arrow' className='object-contain w-4 h-4' />
-        </Link>
+        </Link> */}
       </div>
     );
   }
@@ -48,13 +47,13 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Need a project done or looking for a dev? <br /> I'm just a few keystrokes away
+          Cuối cùng, mình không biết cậu còn muốn biết hay không, nhưng mà... Mình vẫn còn thích cậu nhiều lắm! Cậu cho mình thêm cơ hội nữa được không...?
         </p>
-
+{/* 
         <Link to='/contact' className='neo-brutalism-white neo-btn'>
           Let's talk
           <img src={arrow} alt='arrow' className='object-contain w-4 h-4' />
-        </Link>
+        </Link> */}
       </div>
     );
   }

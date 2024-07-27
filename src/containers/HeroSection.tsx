@@ -47,7 +47,7 @@ const HeroSection = () => {
               {HeroTexts.firstButton}
             </Button> */}
             <div className="flex items-center gap-3 cursor-pointer lg:gap-6">
-              <NavLink to="/gift">
+              {/* <NavLink to="/gift">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -65,7 +65,7 @@ const HeroSection = () => {
                     </Text>
                   </Text>
                 </motion.button>
-              </NavLink>
+              </NavLink> */}
               <AnchorLink href="#services">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
