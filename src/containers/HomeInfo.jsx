@@ -47,7 +47,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Cuối cùng, mình không biết cậu còn muốn biết hay không, nhưng mà... Mình vẫn còn thích cậu nhiều lắm! Cậu cho mình thêm cơ hội nữa được không...?
+          Cuối cùng, tuổi mới thật nhiều niềm vui nhé... À, mình chưa bao giờ ngừng quan tâm đến cậu như cậu nghĩ đâu... Thanh Thi của mình ạ!
         </p>
 {/* 
         <Link to='/contact' className='neo-brutalism-white neo-btn'>
